@@ -1,30 +1,58 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title>Hola, Mundo!</title>
         <h:outputStylesheet name="css/jsfcrud.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     </h:head>
+    
     <h:body>
-        <h1> Bienvenidos a nuestra pagina web</h1>
-        <b>Miguel Salgado</b><br/>
-        <b>Ricardo Triviño</b>
-        <br />
-        <h:link outcome="/categories/List" value="Show All Categories Items"/>
-        <br />
-        <h:link outcome="/customers/List" value="Show All Customers Items"/>
-        <br />
-        <h:link outcome="/employees/List" value="Show All Employees Items"/>
-        <br />
-        <h:link outcome="/products/List" value="Show All Products Items"/>
-        <br />
-        <h:link outcome="/suppliers/List" value="Show All Suppliers Items"/>
+        <div class="pt-4 pb-4 bg-dark text-white" align="center">
+            <h1 style="color: #ffffff"> Control inventario empresarial</h1>
+        </div>
+        
+        <div class="container p-4 my-5 bg-primary text-white ">
+            <h3>Seleccione una categoría para ver los datos</h3>
+            <br/>
+            <ul class="list-group p-2">
+                <h5><li class="list-group-item list-group-item-action list-group-item-info"><h:link outcome="/categories/List" value="Ver categorías de artículos"/></li></h5>
+                <h5><li class="list-group-item list-group-item-action list-group-item-info"><h:link outcome="/customers/List" value="Ver todos los clientes"/></li></h5>
+                <h5><li class="list-group-item list-group-item-action list-group-item-info"><h:link outcome="/employees/List" value="Ver todos los empleados"/></li></h5>
+                <h5><li class="list-group-item list-group-item-action list-group-item-info"><h:link outcome="/products/List" value="Ver todos los productos"/></li></h5>
+                <h5><li class="list-group-item list-group-item-action list-group-item-info"><h:link outcome="/suppliers/List" value="Ver todos los proveedores"/></li></h5>
+            </ul>
+        </div>
+        
+        <div class="jumbotron" style="margin-bottom: 0 !important">
+            <h1>Sistemas Operativos</h1>
+            <h5>Práctica en Github</h5>
+            <br />
+            <div class="row container">
+                <div class="col-sm-4">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Miguel Salgado</h4>
+                            <p class="card-text">Developer</p>
+                            <a href="#" class="btn btn-primary">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width:200px">
+                        <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%"/>
+                        <div class="card-body">
+                            <h4 class="card-title">Ricardo Triviño</h4>
+                            <p class="card-text">Developer</p>
+                            <a href="#" class="btn btn-primary">Ver perfil</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        
     </h:body>
-
-
-
-
-
+    
 </html>
 
